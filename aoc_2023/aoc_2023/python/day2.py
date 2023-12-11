@@ -1,6 +1,6 @@
 import logging
 import re
-from utilities import process_day
+from aoc_2023.python.utilities import process_day
 
 
 class Hand:

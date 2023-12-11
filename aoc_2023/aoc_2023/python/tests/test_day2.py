@@ -1,4 +1,4 @@
-from aoc_2023 import day2, utilities
+from aoc_2023.python import day2, utilities
 import pytest
 
 

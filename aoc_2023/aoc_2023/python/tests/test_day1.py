@@ -1,5 +1,5 @@
 # import pytest
-from aoc_2023.day1 import day1
+from aoc_2023.python.day1 import day1
 
 
 def test_ingest():

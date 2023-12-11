@@ -1,7 +1,7 @@
 import re
 import logging
 from functools import partial
-from aoc_2023.utilities import process_day
+from aoc_2023.python.utilities import process_day
 
 numstrings = {
     "one": 1,

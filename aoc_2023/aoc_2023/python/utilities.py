@@ -6,7 +6,7 @@ logging.basicConfig(encoding='utf-8', level=logging.INFO)
 
 # ingest file
 def ingest_daily_data(day_number: int):
-    input_dir = Path(__file__).parent / "inputs"
+    input_dir = Path(__file__).parents[1] / "inputs"
     assert input_dir.exists()
 
     input_file = input_dir / f"day{day_number}.txt"
@@ -19,4 +19,6 @@ def ingest_daily_data(day_number: int):
 def process_day(day_number: int, callback: callable):
 
     data = ingest_daily_data(day_number)
-    return callback(data)
+    result = callback(data)
+    logging.info(f"Result: {result}")
+    return result
